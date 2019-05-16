@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springBoot1
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Jeff
+Implementation-Vendor-Id: com.jeff
+Build-Jdk: 1.8.0_202
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/springBoot1
+Created-By: Maven Integration for Eclipse
+
