@@ -25,6 +25,16 @@ public class User {
 	private String salt;
 
 	/**
+	 * 性别
+	 */
+	private String sex;
+
+	/**
+	 * 用户状态:
+	 */
+	private String status;
+
+	/**
 	 * 姓名
 	 */
 	private String name;
@@ -35,19 +45,14 @@ public class User {
 	private String nickName;
 
 	/**
-	 * 性别:0.男 1.女
-	 */
-	private Integer sex;
-
-	/**
 	 * 手机号
 	 */
 	private String phone;
 
 	/**
-	 * 用户状态:
+	 * 邮箱
 	 */
-	private String status;
+	private String email;
 
 	/**
 	 * 个人头像
@@ -135,11 +140,11 @@ public class User {
 		this.name = name;
 	}
 
-	public Integer getSex() {
+	public String getSex() {
 		return sex;
 	}
 
-	public void setSex(Integer sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
@@ -197,6 +202,14 @@ public class User {
 
 	public void setModifyName(String modifyName) {
 		this.modifyName = modifyName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }

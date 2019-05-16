@@ -27,8 +27,8 @@
 		            singleSelect : true,
 		            checkOnSelect: false,
 		            idField : 'id',
-		            pageSize : 10,
-		            pageList : [ 10, 20, 50, 100],
+		            pageSize : 2,
+		            pageList : [ 2, 4, 6, 8],
 	        		toolbar: '#tb', 
 			        queryParams:serializeObject($('#searchForm')),  
 			        onLoadSuccess:function(row, data){loadSuccess_on(data)}, //数据加载成功触发,无数据也返回       
@@ -37,12 +37,15 @@
 	        		<thead>
 						<tr>
 						    <th data-options="field:'loginName'" width="8%">登录名</th>
-						    <th data-options="field:'name'" width="8%">真实姓名</th>
 						    <th data-options="field:'sex',formatter:function(value,row,index){if(value=='1'){return '男';}else{return '女';}}"   width="4%">性别</th>
-						    <th data-options="field:'phone'" width="9%">手机</th>
 						    <th data-options="field:'status',formatter:function(value,row,index){if(value=='RESOURCE_ENABLE'){return '有效';}else{return '无效';}}" width="5%">用户状态</th>
-						    <th data-options="field:'createTime'" formatter="opt_formatter_time" width="15%">创建时间</th>
+						    <th data-options="field:'name'" width="8%">真实姓名</th>
+						    <th data-options="field:'phone'" width="9%">手机号</th>
+						    <th data-options="field:'email'" width="9%">邮箱</th>
+						    <th data-options="field:'createTime'" formatter="opt_formatter_time" width="13%">创建时间</th>
 						    <th data-options="field:'createName'"   width="6%">创建人</th>
+						    <th data-options="field:'modifyTime'" formatter="opt_formatter_time" width="13%">修改时间</th>
+						    <th data-options="field:'modifyName'"   width="6%">修改人</th>
 							<th data-options="field:'action'"    width="18%" formatter="opt_formatter">操作</th>
 						</tr>
 					</thead>

@@ -9,6 +9,11 @@ public class Grid {
 	// 表中总个数
 	private long total;
 
+	public Grid(List<?> rows, long total) {
+		this.rows = rows;
+		this.total = total;
+	}
+
 	public List<?> getRows() {
 		return rows;
 	}
